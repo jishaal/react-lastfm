@@ -1,7 +1,16 @@
 {
   "name": "react-lastfm",
   "version": "1.0.0",
+  "main": "src/Lastfm.js",
+  "scripts": {
+    "test": "webpack --progress --colors"
+  },
   "devDependencies": {
-    "gulp-babel": "^5.1.0"
+    "webpack": "^1.8.11"
+  },
+  "dependencies": {
+    "babel-core": "^5.2.17",
+    "babel-loader": "^5.0.0",
+    "react": "^0.13.3"
   }
 }
