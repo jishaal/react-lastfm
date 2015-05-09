@@ -1,0 +1,7 @@
+{
+  "name": "react-lastfm",
+  "version": "1.0.0",
+  "devDependencies": {
+    "gulp-babel": "^5.1.0"
+  }
+}
