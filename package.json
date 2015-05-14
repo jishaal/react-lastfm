@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "src/Lastfm.js",
   "scripts": {
-    "test": "webpack --progress --colors"
+    "test": "webpack --progress --colors",
+    "watch": "webpack --progress --color --watch"
   },
   "devDependencies": {
     "webpack": "^1.8.11"
