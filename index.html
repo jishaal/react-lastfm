@@ -2,9 +2,60 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>New React App</title>
+    <title>Last 10 Played Songs</title>
+
+    <style>
+    	@import url(http://fonts.googleapis.com/css?family=Lato);
+
+		body {
+		  background: #2c3e50;
+		  font-family: 'Lato', sans-serif;
+		  text-align: center;
+		  color: white;
+		}
+
+		.card {
+		  background: #ecf0f1;
+		  padding: 7px;
+		  margin-right: 10px;
+		  margin-bottom: 10px;
+		  border: 1px solid #FFF;
+		  display: inline-block;
+		  box-shadow: 1px 1px 7px #999;
+		  border-radius: 4px;
+		}
+
+		.cover {
+		  width: 180px;
+		  height: 180px;
+		  background-size: cover;
+		  box-shadow: 2px 2px 5px #FAFAFA;
+		  border-radius: 3px;
+		  
+		}
+
+		.content {
+		  margin-top: 10px;
+		}
+		.title {
+		  font-size: 18px;
+		  display: block;
+		  font-weight: 100;
+		  color: #d35400;
+		  text-overflow: ellipsis;
+		  white-space: nowrap;
+		  overflow: hidden;
+		  width: 175px;
+		}
+		.artist {
+		  font-size: 14px;
+		  color: #7f8c8d;
+		}
+    </style>
   </head>
   <body>
+
+  	<h3 class="page-title"> Last 10 Tracks Played <h3>
     <section id="react"></section>
     <script src="dist/bundle.js"></script>
   </body>

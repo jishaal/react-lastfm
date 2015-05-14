@@ -18,14 +18,14 @@ class LastFm extends React.Component {
 
     componentDidMount() {
         console.log("cdm");
-        let Lastfm = this;
+        let localLast = this;
 
         fetch(this.url)
             .then(function(response) {
                 return response.json();
             })
             .then(function(data) {
-                Lastfm.setState({data: data.recenttracks.track});
+                localLast.setState({data: data.recenttracks.track});
                 console.log(data);
             })
             .catch(function(err) {
@@ -36,10 +36,10 @@ class LastFm extends React.Component {
     render() {
         console.log("render");
         if(this.state.data.length > 0){
-            var TrackNodes = this.state.data.map(function (track) {
-                //console.log(track);
+            var TrackNodes = this.state.data.map(function (track, i) {
+
               return (
-                <LastCard artist={track.artist['#text']} title={track.name} key={track.mbid} />
+                <LastCard artist={track.artist['#text']} title={track.name} cover={track.image[3]['#text']} key={i} />
               );
             });
         }
