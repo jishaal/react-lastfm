@@ -10,7 +10,7 @@ export default class LastCard extends React.Component {
         return (
 	        <div className='card'>
 	            <LastCover cover={this.props.cover} />
-	            <LastInfo artist={this.props.artist} title={this.props.title}/>
+	            <LastInfo artist={this.props.artist} title={this.props.title} date={this.props.date}/>
 	        </div>
         )
     }
